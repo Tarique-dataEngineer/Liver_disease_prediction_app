@@ -5,8 +5,7 @@ import pickle
 app = Flask(__name__)
 
 # Load the trained model
-with open('model.pkl', 'rb') as file:
-    model = pickle.load(file)
+model = pickle.load(open("model.pkl", "rb"))
 
 # Define feature names used during training
 feature_names = ['age', 'gender', 'tot_bilirubin', 'direct_bilirubin', 'tot_proteins', 'albumin', 'ag_ratio', 'sgpt', 'sgot', 'alkphos']
