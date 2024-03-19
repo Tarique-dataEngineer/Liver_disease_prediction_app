@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__)
 
 # Load the trained model
-with open('random_forest_model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Define feature names used during training
